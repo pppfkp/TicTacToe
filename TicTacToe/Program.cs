@@ -1,2 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using TicTacToe;
+Board board = new Board(3);
+board.Draw();
+board.MakeAMove(0, 0, TicTacToe.TicTacToe.X);
+board.Draw();
