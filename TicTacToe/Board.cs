@@ -14,13 +14,13 @@ namespace TicTacToe
             _board = new TicTacToe[size, size];
             Clear();
         }
-        public int Dimensions { get => _board.GetLength(0); }
+        public int NumberOfRows { get => _board.GetLength(0); }
         public int NumberOfFields { get => _board.Length; }
         public void Clear()
         {
-            for (int i = 0; i < Dimensions; i++)
+            for (int i = 0; i < NumberOfRows; i++)
             {
-                for(int j = 0; j < Dimensions; j++)
+                for(int j = 0; j < NumberOfRows; j++)
                 {
                     _board[i, j] = TicTacToe.Empty;
                 }
